@@ -32,3 +32,4 @@ The following images from your design need to be added to the `public/images/` f
 - VR man image (purple background)
 
 Once you provide the icons and additional images, I can integrate them into the design.
+# testFront
