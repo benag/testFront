@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'orange-primary': '#FF6B35',
+        'orange-primary': '#F95D2D',
         'orange-gradient-start': '#FF8A50',
-        'orange-gradient-end': '#FF6B35',
+        'orange-gradient-end': '#F95D2D',
       },
       fontFamily: {
         'display': ['Arial Black', 'sans-serif'],
