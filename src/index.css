@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #FF8A50 0%, #FF6B35 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #FF8A50 0%, #FF6B35 100%);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.outlined-text {
+  -webkit-text-stroke: 6px black;
+  -webkit-text-fill-color: transparent;
+  text-stroke: 6px black;
+  text-fill-color: transparent;
+}
+
+.outlined-text-white {
+  -webkit-text-stroke: 1pt white;
+  -webkit-text-fill-color: transparent;
+  text-stroke: 1pt white;
+  text-fill-color: transparent;
+}
