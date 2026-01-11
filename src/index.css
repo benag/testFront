@@ -72,18 +72,45 @@ body {
 .animated-text {
   position: relative;
   display: inline-block;
+  min-width: 200px;
+  overflow: hidden;
 }
 
 .animated-text::after {
   content: 'BRAND';
-  animation: textCycle 4s infinite;
+  animation: fadeRollDown 6s infinite;
+  display: block;
 }
 
-@keyframes textCycle {
-  0%, 45% {
+@keyframes fadeRollDown {
+  0%, 40% {
     content: 'BRAND';
+    opacity: 1;
+    transform: translateY(0);
   }
-  50%, 95% {
+  47% {
+    content: 'BRAND';
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  50% {
     content: 'ONLINE';
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  57%, 90% {
+    content: 'ONLINE';
+    opacity: 1;
+    transform: translateY(0);
+  }
+  97% {
+    content: 'ONLINE';
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    content: 'BRAND';
+    opacity: 0;
+    transform: translateY(-10px);
   }
 }
