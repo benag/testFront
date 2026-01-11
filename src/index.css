@@ -68,3 +68,22 @@ body {
   text-stroke: 1px white;
   text-fill-color: transparent;
 }
+
+.animated-text {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-text::after {
+  content: 'BRAND';
+  animation: textCycle 4s infinite;
+}
+
+@keyframes textCycle {
+  0%, 45% {
+    content: 'BRAND';
+  }
+  50%, 95% {
+    content: 'ONLINE';
+  }
+}

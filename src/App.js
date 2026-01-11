@@ -7,24 +7,24 @@ function App() {
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="hero-gradient min-h-screen relative overflow-hidden">
+      <section className="bg-black min-h-screen relative overflow-hidden">
         {/* Navigation */}
         <nav className="relative z-10 flex items-center justify-between p-6 lg:p-8">
-          <div className="text-2xl font-bold text-black">ORANZON</div>
+          <div className="text-2xl font-bold text-white">ORANZON</div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="grid grid-cols-2 gap-2">
-              <div className="w-3 h-3 bg-black rounded-full hover:bg-gray-800 transition-colors cursor-pointer"></div>
-              <div className="w-3 h-3 bg-black rounded-full hover:bg-gray-800 transition-colors cursor-pointer"></div>
-              <div className="w-3 h-3 bg-black rounded-full hover:bg-gray-800 transition-colors cursor-pointer"></div>
-              <div className="w-3 h-3 bg-black rounded-full hover:bg-gray-800 transition-colors cursor-pointer"></div>
+              <div className="w-3 h-3 bg-white rounded-full hover:bg-gray-300 transition-colors cursor-pointer"></div>
+              <div className="w-3 h-3 bg-white rounded-full hover:bg-gray-300 transition-colors cursor-pointer"></div>
+              <div className="w-3 h-3 bg-white rounded-full hover:bg-gray-300 transition-colors cursor-pointer"></div>
+              <div className="w-3 h-3 bg-white rounded-full hover:bg-gray-300 transition-colors cursor-pointer"></div>
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <button 
-            className="md:hidden text-black"
+            className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -45,26 +45,37 @@ function App() {
 
         {/* Hero Content */}
         <div className="relative z-10 flex items-center justify-center px-4 py-12 md:py-24 lg:py-32" style={{ minHeight: '80vh' }}>
-          <div className="w-full max-w-4xl">
-            <h1 className="hero-heading text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none mb-2 md:mb-4">
-              CRAFTING
-            </h1>
-            <h1 className="hero-heading text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none mb-2 md:mb-4 overflow-hidden" style={{ paddingLeft: '10%', '@media (min-width: 768px)': { paddingLeft: '20%' } }}>
-              YOUR <span className="outlined-text">DIGITAL</span>
-            </h1>
-            <h1 className="hero-heading text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-black leading-none mb-4" style={{ paddingLeft: '20%', '@media (min-width: 768px)': { paddingLeft: '50%' } }}>
-              <span className="text-black font-normal">©</span>IDENTITY
-            </h1>
-            <p className="text-black mt-6 md:mt-8 max-w-xs sm:max-w-md text-left leading-relaxed text-sm">
-              Continuously endeavoring to craft<br />
-              outstanding experiences and narrate<br />
-              your story in a meaningful way.
-            </p>
+          <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            {/* Profile Image */}
+            <div className="flex justify-center lg:justify-end order-2 lg:order-1">
+              <div className="relative">
+                <img 
+                  src="/images/profile.jpeg" 
+                  alt="Profile" 
+                  className="w-80 h-96 md:w-96 md:h-[450px] lg:w-[500px] lg:h-[700px] object-cover object-top rounded-lg shadow-2xl"
+                />
+              </div>
+            </div>
+            
+            {/* Text Content */}
+            <div className="text-center lg:text-left order-1 lg:order-2">
+              <h1 className="hero-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-orange-primary leading-none mb-4">
+                CRAFTING
+              </h1>
+              <h1 className="hero-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-orange-primary leading-none mb-4">
+                YOUR <span className="animated-text text-orange-primary"></span>
+              </h1>
+              <h1 className="hero-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black text-orange-primary leading-none mb-8">
+                <span className="text-orange-primary font-normal">©</span>IDENTITY
+              </h1>
+              <p className="text-white mt-6 md:mt-8 max-w-md text-left lg:text-left leading-relaxed text-base md:text-lg">
+                Continuously endeavoring to craft<br />
+                outstanding experiences and narrate<br />
+                your story in a meaningful way.
+              </p>
+            </div>
           </div>
         </div>
-
-       
-        
       </section>
 
       {/* Services Section */}
