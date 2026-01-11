@@ -22,14 +22,14 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #FF8A50 0%, #FF6B35 100%);
+  background: linear-gradient(135deg, #F95D2D 0%, #F95D2D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero-gradient {
-  background: linear-gradient(135deg, #FF8A50 0%, #FF6B35 100%);
+  background: #F95D2D;
 }
 
 .text-shadow {

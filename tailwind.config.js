@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       colors: {
         'orange-primary': '#F95D2D',
-        'orange-gradient-start': '#FF8A50',
+        'orange-gradient-start': '#F95D2D',
         'orange-gradient-end': '#F95D2D',
       },
       fontFamily: {
